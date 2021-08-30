@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    // current day, month, day, year, time time running the seconds
+    // current day
   $('#currentDay').text(moment().format('MMMM Do YYYY hh:mm:ss A'));
   
   setInterval(function () {
@@ -10,7 +10,7 @@ $(document).ready(function () {
   let currentTime = parseInt(moment().format('HH'));
   console.log(currentTime)
      
-    //dynamically create a place to store text content for each time frame within the array
+    //store text content
   let workDay = [
       'hour-9',
       'hour-10',
@@ -35,7 +35,6 @@ $(document).ready(function () {
       ];
   
     for (let i = 0; i < workDay.length; i++) {
-      //create textcontent boxes for each time slot
       let hour = workDay[i];
       let schedHour = parseInt(workDay[i].slice(5))
       console.log (schedHour)
@@ -57,7 +56,7 @@ $(document).ready(function () {
           } else {
               childDiv2.setAttribute('class', 'col-md-10 description past')
           };
-      childDiv2.textContent = ""; // sets default value as blank
+      childDiv2.textContent = "";
       parentDiv.appendChild(childDiv2);
   
       let childDiv3 = document.createElement('button');
@@ -67,12 +66,10 @@ $(document).ready(function () {
      
     }
   
-    //saves text content to local storage
+    //save to localStorage
     $('.saveBtn').on('click', function () {
       let timeSlot = $(this).parent().attr('id');
-      let userInput = $(this).prev().val(); // relative
-      // console.log($(this));
-      // console.log(userInput);
+      let userInput = $(this).prev().val();
       localStorage.setItem(timeSlot, userInput);
     });
   
