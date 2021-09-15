@@ -14,6 +14,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -30,9 +31,53 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
+      <div class="row" id="9am">
+        <div class="col-md-2" id="task-input"><p id="9amTime" class="timeOfDay">9:00am</p></div>
+        <div class="col-md-8" id="textbox-1"><Textarea class="text-box" id="box1"></Textarea></div>
+        <button class="col-md-2 saveBtn" id="saveBtn"><span class="iconify" data-icon="ant-design:save-filled"></span></button>
+      </div>
+      <div class="row" id="10am">
+        <div class="col-md-2" id="task-input"><p id="10amTime" class="timeOfDay">10:00am</p></div>
+        <div class="col-md-8" id="textbox-2"><Textarea class="text-box" id="box2"></Textarea></div>
+        <button class="col-md-2 saveBtn" id="saveBtn"><span class="iconify" data-icon="ant-design:save-filled"></span></button>
+      </div>
+      <div class="row" id="11am">
+        <div class="col-md-2" id="task-input"><p id="11amTime" class="timeOfDay">11:00am</p></div>
+        <div class="col-md-8" id="textbox-3"><Textarea class="text-box" id="box3"></Textarea></div>
+        <button class="col-md-2 saveBtn" id="saveBtn"><span class="iconify" data-icon="ant-design:save-filled"></span></button>
+      </div>
+      <div class="row" id="12pm">
+        <div class="col-md-2" id="task-input"><p id="12pmTime" class="timeOfDay">12:00pm</p></div>
+        <div class="col-md-8" id="textbox-4"><Textarea class="text-box" id="box4"></Textarea></div>
+        <button class="col-md-2 saveBtn" id="saveBtn"><span class="iconify" data-icon="ant-design:save-filled"></span></button>
+      </div>
+      <div class="row" id="1pm">
+        <div class="col-md-2" id="task-input"><p id="1pmTime" class="timeOfDay">1:00pm</p></div>
+        <div class="col-md-8" id="textbox-5"><Textarea class="text-box" id="box5"></Textarea></div>
+        <button class="col-md-2 saveBtn" id="saveBtn"><span class="iconify" data-icon="ant-design:save-filled"></span></button>
+      </div>
+      <div class="row" id="2pm">
+        <div class="col-md-2" id="task-input"><p id="9amTime" class="timeOfDay">2:00pm</p></div>
+        <div class="col-md-8" id="textbox-6"><Textarea class="text-box" id="box6"></Textarea></div>
+        <button class="col-md-2 saveBtn" id="saveBtn"><span class="iconify" data-icon="ant-design:save-filled"></span></button>
+      </div>
+      <div class="row" id="3pm">
+        <div class="col-md-2" id="task-input"><p id="3pmTime" class="timeOfDay">3:00pm</p></div>
+        <div class="col-md-8" id="textbox-7"><Textarea class="text-box" id="box7"></Textarea></div>
+        <button class="col-md-2 saveBtn" id="saveBtn"><span class="iconify" data-icon="ant-design:save-filled"></span></button>
+      </div>
+      <div class="row" id="4pm">
+        <div class="col-md-2" id="task-input"><p id="4pmTime" class="timeOfDay">4:00pm</p></div>
+        <div class="col-md-8" id="textbox-8"><Textarea class="text-box" id="box8"></Textarea></div>
+        <button class="col-md-2 saveBtn" id="saveBtn"><span class="iconify" data-icon="ant-design:save-filled"></span></button>
+      </div>
+      <div class="row" id="5pm">
+        <div class="col-md-2" id="task-input"><p id="5pmTime" class="timeOfDay">5:00pm</p></div>
+        <div class="col-md-8" id="textbox-9"><Textarea class="text-box" id="box9"></Textarea></div>
+        <button class="col-md-2 saveBtn" id="saveBtn"><span class="iconify" data-icon="ant-design:save-filled"></span></button>
+      </div>
     <div>
+      <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
       <script src="./assets/js/script.js"></script>
